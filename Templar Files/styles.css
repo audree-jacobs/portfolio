@@ -1,9 +1,6 @@
-
 /* fonts (Raleway for headers, Quicksand for body) */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Raleway:wght@200;400&display=swap');
 
-
-/* CSS Reset */
 
 html {
     margin: 0; 
@@ -121,12 +118,58 @@ header {
     position: relative; 
 }
 
+.subsection2 {
+    max-width: 90vw; 
+    padding-left: 2vw; 
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+}
+
+/* CSS animation for the titles */
+
+/* move right to left */
+@keyframes left {
+    0% { margin-left: 40vw; }
+    85% { margin-left: -1vw; }
+    90% { margin-left: -1vw; }
+    100% { margin-left: 0vw; }
+}
+
+/* move left to right */ 
+
+@keyframes right {
+    0% { margin-left: 40vw; }
+    85% { margin-left: -1vw; }
+    90% { margin-left: -1vw; }
+    100% { margin-left: 0vw; }
+}
+
+#title1 {
+    animation-duration: 2s; 
+}
+
+#title2 {
+    animation-name: right; 
+    animation-duration: 2s; 
+}
+
+#title3 {
+    animation-duration: 2s; 
+}
+
+#title4 {
+    animation-duration: 2s; 
+}
+
 .title_header {
     width: 100%; 
     max-width: 100%; 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 }
+
 
 .border {
     grid-column: 3/6; 
@@ -148,8 +191,9 @@ header {
     display: block; 
     max-width: 70vw; 
     width: 70vw; 
-    margin: auto; 
-    padding-right: 5.5vw;   
+    margin: auto;  
+    grid-column: 1/4;
+    grid-row: 1/2;   
 }
 
 .logo_gif:hover {
@@ -165,11 +209,14 @@ p {
 .about_text_left {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    position: absolute; 
+    width: 17vw;
     font-size: 2vw;
+    grid-column: 1/2; 
+    grid-row: 1/2;
+    justify-self: right; 
+    /* position: absolute;  
     top: 40vh; 
-    left: 20vw; 
-    width: 17vw;   
+    left: 20vw;  */  
 }
 
 .about_text_left .word1 {
@@ -191,9 +238,13 @@ p {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr; 
     font-size: 2vw; 
+    /* 
     position: absolute; 
     top: 40vh; 
-    right: 24vw; 
+    right: 24vw; */
+    grid-column: 3/4; 
+    grid-row: 1/2;
+    align-self: left; 
     width: 17vw; 
 }
 
@@ -226,14 +277,15 @@ p {
     border-bottom: 2px solid rgba(255, 255, 255, 0.761); 
 }
 
-.title2 {
+.title_2 {
     text-align: right; 
     color: rgba(255, 255, 255, 0.761); 
     font-family: 'Quicksand', sans-serif; 
     font-weight: 300; 
     font-size: 4vw; 
     margin-bottom: 1vh; 
-    padding-right: 1vw;  
+    padding-right: 1vw;
+    margin-right: 0;   
 }
 
 .services_grid {
@@ -307,6 +359,29 @@ p {
     height: 100vh; 
     min-height: 100vh;
     padding-top: 8vh;  
+}
+
+.bespoke_text {
+    width: 80%;
+    margin: auto; 
+    padding: 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center; 
+}
+
+.gear_image {
+    max-width: 35vw; 
+    margin: 0; 
+    grid-column: 1/2; 
+}
+
+.bespoke_paragraph{
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300;
+    font-size: 1.4vw; 
+    grid-column: 2/4;
+    color: rgba(255, 255, 255, 0.717); 
 }
 
 /* Section 5 Contact */
