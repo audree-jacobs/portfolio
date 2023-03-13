@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audrey Jacobs Portfolio, UX UI Designer and Frontend Developer.">
+    <meta name="keywords" content="Audrey Jacobs, Audrey Jacobs Web Developer, Jr Web Developer, Jr UX UI Designer,
+    Graphic Designer, Frontend Developer, Freelance Developer, Audrey Jacobs Portfolio, Audrey Jacobs Linkedin, 
+    Audrey Jacobs Behance, Audrey Jacobs Work Experience, Audrey Jacobs Connecticut, Audrey Jacobs Idaho">  
+    
+    <title> Audrey Jacobs Portfolio </title>
+    
+    <link rel="icon" type="image/x-icon" href="images/green favicon.ico">
+    <link href="styles.css" rel="stylesheet"> 
+    <link href="media_queries.css" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+   <!-- <img class="texture" src="images/paper texture.jpg"> --> 
+
+    <!--  Fixed Top Menu  -->
+    <div class="top_menu">
+       <h1> AUDREY JACOBS </h1>  
+
+       <!-- Functional Menu Button -->
+       <div class="menu_button" onclick="menu()" id="menu_closed"> 
+            <p id="menu_text"> MENU </p>
+            <p class="x"> x </p>
+
+       </div> 
+
+       <div class="menu_links">
+            <a class="menu_link link1" href="#recent_projects"> Recent Projects </a>
+            <a class="menu_link link2" href="#m"> Mobile UX </a>
+            <a class="menu_link link3" href="#d"> Design Process </a>
+            <a class="menu_link link4" href="#contact"> Contact </a>
+       </div>
+
+       <!--  Switch to change light/dark mode  -->
+       <img class="light_switch switch" onclick="myFunction_set()" src="images/light switch.png" 
+       alt="toggle switch icon"> 
+
+       <img class="dark_switch switch" onclick="myFunction_set2()" src="images/dark switch.png" 
+       alt="toggle switch icon"> 
+
+    </div>
+
+
+    <!-- Contact Button -->
+
+    <div class="contact_button"> 
+        <a href="#contact"> CONTACT </a>
+    </div>
+
+    <!--  First Section  (switching device animation & title) -->
+    <section class="first_section"> 
+
+        <div class="title_rect">
+            <h2> UX DESIGNER <br> 
+             DEVELOPER </h2>
+        
+        </div>
+
+        <p class="and"> & </p>
+
+        <div class="cutout_circle">
+            <div class="shadow_circle" >
+
+                <img class= "devices phone" src="images/phone.png" alt="purple cell phone">
+                <img class= "devices ipad" src="images/iPad.png" alt="pink ipad with pen drawing">
+                <img class= "devices gaming"  src="images/gaming.png" alt="green handheld gaming console">
+                <img class= "devices vr_glasses" src="images/vr glasses.png" alt="green VR Glasses"> 
+
+                <img class="devices laptop"  src="images/laptop.png" alt="open laptop with a green screen">
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Recent Work Section -->
+    <section class="round_top_section" id="recent_projects">
+        <h3> RECENT PROJECTS </h3>
+
+        <div class="recent_work_grid"> 
+
+            <div class="work_box box1"> 
+                <a href="recent_project1.html"> <img src="images/IN4.0S.png" alt="Laptop showing muliple screens of a clean white website design" > </a>
+                <a href="recent_project1.html"> <h4> IN4.0S Company Website Redesign </h4> </a>
+                <p> Conceptualized a full redesign of the IN4.0S company’s website as part of a UX team. 
+                    Led development of the site through to deployment and multiple site updates.  </p> 
+            </div>
+
+            <div class="work_box box2"> 
+                <a href="recent_project2.html"> <img src="images/Delivery App.png" alt="Phone and tablet mockup showing a blue app welcome screen" > </a>
+                <a href="recent_project2.html"> <h4> Delivery App Interface Design </h4> </a>
+                <p> Prototyped a multi-device app UI spanning phone, tablet and computer interfaces while 
+                    maintaining the playful and cohesive branding throughout the app.  </p> 
+            </div>
+
+            <div class="work_box box3"> 
+                <a href="recent_project3.html"> <img src="images/Templar.png" alt="Laptop mockup showing a dark blue landing page website design" > </a>
+                <a href="recent_project3.html"> <h4> Templar Website Development </h4> </a>
+                <p> Launched this startup company’s landing page after creating the design from scratch.  
+                    Led development of the code including javascript animations and contact form integration.  </p> 
+            </div>
+
+            <div class="work_box box4"> 
+                <a href="recent_project4.html" > <img src="images/BCC Yellow.png" alt="Mockup showing a clean white webpage design on a gold background" > </a>
+                <a href="recent_project4.html" > <h4> BCC Construction Portfolio Site </h4> </a>
+                <p id="m"> Recruited as a freelance developer to create the design for this construction company’s portfolio of work.  
+                    Cleanly & efficiently showcases the client’s skillset.   </p> 
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="round_top_section2">
+        <h3> MOBILE DESIGN </h3>
+
+        <div class="phone_section">
+            <h4> Common Garden App Design </h4>
+            <div class="phones">
+                <img src="images/garden 1.png" alt="Garden booking experience screen"> 
+                <img src="images/garden 2.png" alt="Garden booking experience screen"> 
+                <img src="images/garden 3.png" alt="Garden booking experience screen"> 
+                <img src="images/garden 5.png" alt="Garden booking experience screen"> 
+                <img src="images/garden 6.png" alt="Garden booking experience screen"> 
+                <img src="images/garden 7.png" alt="Garden booking experience screen"> 
+             </div>
+
+            <div class="mobile_text">
+                <p> The style of this app was inspired by vintage seed packets & 1950’s 
+                    movie tickets.  I captured this style with similar fonts, borders, 
+                    and real vintage drawings.  The booking process is streamlined to be 
+                    clean, whimsical and enjoyable for the user.  This app was created within 
+                    the guidelines of Google Material 3 Design.    
+                </p>
+
+                <a href="https://www.behance.net/gallery/145922259/Garden-Booking-App" target="_blank"> VIEW CASE STUDY </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="phone_section">
+            <h4> One Tap Checkout </h4>
+            <div class="phones">
+                <img src="images/tap 1.png" alt="One tap chackout screen"> 
+                <img src="images/tap 2.png" alt="One tap chackout screen"> 
+                <img src="images/tap 3.png" alt="One tap chackout screen"> 
+                <img src="images/tap 4.png" alt="One tap chackout screen"> 
+                <img src="images/tap 5.png" alt="One tap chackout screen"> 
+             </div>
+
+             <div class="mobile_text">
+                <p>   This one tap checkout experience was designed to work with AR 
+                    technology which scans a product using the device’s camera, then 
+                    finds similar products online.  The user experience is designed to 
+                    use the least clicks possible to streamline the user through the 
+                    purchase seamlessly.  
+                </p>
+
+                <a href="https://www.figma.com/proto/TQolihqwcvo2YHBH9jkrmq/One-Tap-Checkout?
+                node-id=2%3A4&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1" 
+                target="_blank"> VIEW PROTOTYPE </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="phone_section">
+            <h4> Daily Planner App</h4>
+            <div class="phones">
+                <img src="images/planner 1.png" alt="Daily planner app screen"> 
+                <img src="images/planner 2.png" alt="Daily planner app screen"> 
+                <img src="images/planner 3.png" alt="Daily planner app screen"> 
+                <img src="images/planner 4.png" alt="Daily planner app screen"> 
+                <img src="images/planner 5.png" alt="Daily planner app screen"> 
+                <img src="images/planner 6.png" alt="Daily planner app screen"> 
+             </div>
+
+             <div class="mobile_text">
+                <p>   This app is designed to be used as an everyday planner, 
+                    with the added capability of being able to prioritize your 
+                    to do list and schedule your day automatically.  The screens 
+                    are rich with information but still clean and organized for the 
+                    user.  The cute little drawings are there to add a small moment 
+                    of joy to the user’s day.     
+                </p>
+
+                <a href="https://www.figma.com/proto/KOikdHwcsQAo08HdMek0EN/Final-Planner-App?
+                scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A541&node-id=1%3A541" target="_blank"> 
+                VIEW PROTOTYPE </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="phone_section">
+            <h4> Onboarding UX </h4>
+            <div class="phones">
+                <img src="images/onboard 1.png" alt="App onboarding screen"> 
+                <img src="images/onboard 2.png" alt="App onboarding screen"> 
+                <img src="images/onboard 3.png" alt="App onboarding screen"> 
+             </div>
+
+             <div class="mobile_text">
+                <p>  These app onboarding screens are a simple, colorful, & inviting 
+                    first experience with the app.  As onboarding can be annoying for 
+                    the user, there is an emphasis on wayfinding to show there are only 
+                    three steps, adding interest with cute images, and making each step 
+                    easily skippable.        
+                </p>
+                
+                <a id="d" href="https://www.figma.com/proto/lH0esMifg6KZKbOsVC4Cr6/On-Boarding?scaling=
+                scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&node-id=2%3A2" target="_blank"> 
+                VIEW PROTOTYPE </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="round_top_section process_section">
+        <h3> MY DESIGN PROCESS </h3>
+
+        <div class="all_circles"> 
+
+            <div class="circle_text"> 
+                <div class="circle text1"> <p> Understanding </p> </div>
+                <div class="circle text2"> <p> Research </p> </div>
+                <div class="circle text3"> <p> Wireframing </p> </div>
+                <div class="circle text4"> <p> Prototyping </p> </div>
+                <div class="circle text4"> <p> User Testing </p> </div>
+                <div class="circle text5"> <p> Development </p> </div>
+                <div class="circle text6"> <p> Testing </p> </div>
+                <div class="circle text7"> <p> Deployment </p> </div>
+            </div>
+            
+            <div class="circles"> 
+                <div class="circle circle1"> <p>  </p> </div>
+                <div class="circle circle2"> <p>  </p> </div>
+                <div class="circle circle3"> <p>  </p> </div>
+                <div class="circle circle4"> <p>  </p> </div>
+                <div class="circle circle5"> <p>  </p> </div>
+                <div class="circle circle6"> <p>  </p> </div>
+                <div class="circle circle7"> <p>  </p> </div>
+                <div class="circle circle8"> <p>  </p> </div>
+            </div>
+
+        </div>
+
+        <a class="case_study" id="contact" href="https://www.behance.net/audreyjacobs?tracking_source=search_users|audrey%20jacobs" target="_blank"> VIEW FULL CASE STUDIES &rarr; </a>
+
+    </section> 
+
+    <section class="contact_section">
+
+        <img class="portrait" src="images/portrait.png" alt="Image of Audrey Jacobs"> 
+        
+        <div class="contact_text"> 
+
+            <h4> Lets Work Together </h4>
+            <p class="info"> Audrey Jacobs  |  BS in Web Design and Development  |  2 years of experience </p>
+
+            <a href="https://www.linkedin.com/in/audrey-jacobs-byui2022/" target="_blank"> LinkedIN </a> <br> 
+            <a href="https://www.behance.net/audreyjacobs" target="_blank"> Behance </a> <br> 
+            <a href="mailto: audreynj13@gmail.com" class="email"> Email </a>
+
+            <a id="resume" href="images/resume.pdf" target="_blank"> View Resume </a>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="foot_menu">
+            <a href="#recent_projects"> Recent Work </a> 
+            <a href="#m"> Mobile UX </a> 
+            <a href="#d"> Design Process </a>
+            <a href="#contact"> Contact </a>
+        </div>
+
+        <div class="copyright2">
+            © Website Design by Audrey Jacobs
+        </div>
+
+        <div class="copyright">
+            <p> PSD MOCKUPS: Image by zlatko_plamenov on Freepik |  Image by rawpixel.com on Freepik  
+                |  Image by rawpixel.com on Freepik  |  Image by Freepik | Image by designwarrior on Freepik
+                 |  Device Icons from https://icons8.com  |  
+                https://icons8.com/illustrations/illustration/609a2cf5bfaf070001af4ff6 </p>
+        </div>
+
+        <div class="cat_section">
+            <div class="shadow_circle cat_circle"> 
+                <img class="cat" src="images/heart eyes cat.png" alt="Cute tabby cat with heart eyes">  
+            </div>
+            <p> Thanks for Visiting! </p>
+        </div>
+
+    </section>
+
+</body>
+</html>

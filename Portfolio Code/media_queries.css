@@ -1,0 +1,210 @@
+
+/*  Media Queries  */ 
+
+
+
+
+/* //////////// */
+/*    Ipad Screen Size    */
+
+@media screen and (max-width: 812px) {
+
+
+/* top menu */   
+.cutout_circle {
+    display: none; 
+}
+
+.top_menu {
+    grid-template-columns: 60% 13% 1fr 70px; 
+    
+}
+
+h1 {
+    font-size: 5vw; 
+}
+
+.menu_button {
+    max-width: 9vw;
+    width: 9vw;  
+    height: 4vw; 
+}
+
+.menu_button p {
+    font-size: 1.5vw; 
+}
+
+.switch {
+    width: 20px; 
+}
+
+/* first section */
+
+.title_rect {
+    position: relative;
+    display: flex;
+    height: 20vh;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+}
+
+
+
+
+
+
+/* //////////// */
+/*    Phone Screen Size    */
+
+
+@media screen and (max-width: 512px) {
+
+
+    /* top menu */   
+    .cutout_circle {
+        display: none; 
+    }
+    
+    .top_menu {
+        grid-template-columns: 60% 13% 1fr 30px; 
+    }
+    
+    h1 {
+        font-size: 5vw; 
+        padding-left: 30px; 
+    }
+    
+    .menu_button {
+        max-width: 15vw;
+        width: 15vw;  
+        height: 7vw; 
+    }
+    
+    .menu_button p {
+        font-size: 3vw; 
+    }
+    
+    .switch {
+        width: 20px;
+        display: none;  
+    }
+    
+    /* first section */
+    
+    .title_rect {
+        position: relative;
+        display: flex;
+        height: 18vh;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    h2 {
+        margin-left: 30px;
+        font-size: 8vw;
+        align-self: center;
+        color: var(--dark_gray);
+        font-family: "Playfair Display SC", serif;
+        padding-top: 3vh; 
+        line-height: 100%;
+    }
+
+    .and {
+        font-size: 18vw; 
+        top: 13vmin; 
+        left: 52%; 
+    }
+
+    /*  Recent Project Section  */
+
+    .round_top_section {
+        margin-top: 4vh; 
+    }
+
+    .recent_work_grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10vw;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h3 {
+        font-size: 9vw;
+    }
+
+    .work_box h4 {
+        padding: 1.2vw 0.5vw 0.7vw 0.5vw;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .work_box p {
+        font-size: 3.5vw; 
+        text-align: justify; 
+        padding-top: 1vh; 
+    }
+
+
+
+    /* Phone Section */
+
+    .phone_section {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 5vmin;
+        margin-bottom: 15vmin;
+    }
+
+    .phones {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto; 
+        margin-left: -12%;
+    }
+
+    .phone_section h4 {
+        font-size: 6vw; 
+        padding-left: 10px; 
+    }
+
+
+
+    .mobile_text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        width: 97%;
+    }
+
+    .mobile_text p {
+        padding-left: 10px; 
+        font-size: 3.5vw;
+        font-weight: 200;
+        text-align: justify;
+    }
+
+    .mobile_text a {
+        font-size: 3vw;
+        padding-top: 2vh; 
+    }
+
+    /* Design Section */
+
+    .circle_text {
+        padding-left: 15px; 
+    }
+
+    .circles {
+        padding-left: 15px; 
+    }
+
+    .case_study {
+        font-size: 3vw; 
+    }
+
+
+}
