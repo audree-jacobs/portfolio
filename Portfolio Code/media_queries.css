@@ -63,12 +63,17 @@ h1 {
 
 
     /* top menu */   
+
+    .menu_button {
+        display: none; 
+    }
+
     .cutout_circle {
         display: none; 
     }
     
     .top_menu {
-        grid-template-columns: 60% 13% 1fr 30px; 
+        grid-template-columns: 50% 20% 1fr 30px; 
     }
     
     h1 {
@@ -326,4 +331,115 @@ h1 {
         grid-row: 1/3;
     }
 
+
+    /* Project Subpages */
+    
+    .wayfinding {
+        font-size: 2vw; 
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center; 
+        justify-self: end; 
+    }
+
+    .banner_image {
+        max-width: 180%;
+        width: 180%; 
+        margin-left: -45%; 
+        margin-top: 3vh; 
+    }
+
+    .project_title {
+        font-size: 6vw;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    .tags {
+        margin-left: 30px;
+        padding-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .tag {
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 4vw;
+        max-width: 15vw;
+        margin-right: 5px;
+        font-size: 2.5vw;
+    }
+
+    .back_button {
+        font-size: 3vw; 
+    }
+
+    .process {
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 3vh; 
+    }
+
+    .project_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 15vmin;
+        box-sizing: border-box;
+    }
+
+    .left {
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        text-align: justify; 
+    }
+
+    .right {
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        text-align: justify; 
+    }
+
+    .right_span {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+    }
+
+    .left_span {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #prototype {
+        display: none; 
+    }
+
+    .project_section_titles {
+        font-weight: 800;
+        font-size: 9vw;
+        padding-bottom: 1vh;
+    }
+
+    .project_section_titles br {
+        display: none; 
+    }
+
+    .left p {
+        padding-right: 0;
+        font-size: 3vw; 
+    }
+
+    .right p {
+        padding: 0; 
+        font-size: 3vw; 
+    }
+
+    .style_guide {
+        display: none; 
+    }
+
 }
+
