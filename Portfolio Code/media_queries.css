@@ -90,6 +90,10 @@ h1 {
         width: 20px;
         display: none;  
     }
+
+    .contact_button {
+        display: none; 
+    }
     
     /* first section */
     
@@ -203,8 +207,123 @@ h1 {
     }
 
     .case_study {
-        font-size: 3vw; 
+        font-size: 4vw; 
     }
 
+    /* Contact Section */
+
+    .contact_section {
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-top: 5vh;
+        padding-bottom: 5vh;
+        margin-bottom: 0;
+    }
+
+    .contact_text h4 {
+        font-size: 8vw;
+        font-weight: 300;
+        padding-top: 3vh; 
+        text-align: center; 
+    }
+
+    .info {
+        font-size: 3.5vw;
+        font-weight: 300;
+        padding-bottom: 5vmin;
+        text-align: center; 
+        padding-top: 1vh; 
+    }
+
+    .contact_text a {
+        display: block;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 9vw;
+        font-weight: 200;
+        text-align: center; 
+        padding-top: 1vmin;
+    }
+
+    #resume {
+        display: none; 
+    }
+
+    /* footer */
+
+    .footer {
+        padding-top: 2vw;
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-template-rows: auto 8vh auto;
+        grid-template-columns: 1fr;
+    }
+
+    .foot_menu {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 1.5vw;
+        width: 100%; 
+    }
+
+    .foot_menu a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--black);
+        padding-right: 2vw;
+        padding-bottom: 1vw;
+        font-size: 3.35vw;
+        font-weight: 500;
+    }
+
+    .copyright2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: end;
+        font-size: 2.5vw;
+        padding-bottom: 1vw;
+    }
+
+    .copyright {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 2vw;
+        color: var(--gray_to_white);
+        padding-right: 0;
+        text-align: justify;
+        margin-bottom: 3vh; 
+    }
+
+    .cat_section {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80% 20%;
+        margin-top: 2vh; 
+        margin-bottom: 2vh; 
+    }
+
+    .cat_section p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end; 
+        font-size: 6vw;
+    }
+
+    .cat_circle {
+        position: relative;
+        max-width: 30vw;
+        width: 30vw;
+        height: 30vw;
+        align-self: center;
+        justify-self: center; 
+        margin: auto; 
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
 
 }
